@@ -1,9 +1,9 @@
 import { Injectable, NotFoundException } from '@nestjs/common'
 import { QueuesDataDragonDTO } from 'twisted/dist/dto'
 import { Model } from 'mongoose'
-import { IQueueModel } from '../models/models/queue/queue.interface'
 import { ModelsName } from '../enums/database.enum'
 import { InjectModel } from '@nestjs/mongoose'
+import { IQueueModel } from 'twisted-models'
 
 @Injectable()
 export class QueuesService {
@@ -21,7 +21,7 @@ export class QueuesService {
     if (id) {
       const instance = await this.repository.findOne({ id })
       if (!instance) {
-        throw new NotFoundException(`Season ${id} not found`)
+        throw new NotFoundException(`Queue ${id} not found`)
       }
       return instance
     }

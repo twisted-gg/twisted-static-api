@@ -40,7 +40,8 @@
     "rxjs": "^6.3.3",
     "swagger-ui-express": "^4.1.2",
     "twisted": "^1.2.2",
-    "twisted-common": "git+https://gitlab.com/twisted.gg/twisted-common.git"
+    "twisted-common": "git+https://gitlab.com/twisted.gg/twisted-common.git",
+    "twisted-models": "git+https://gitlab.com/twisted.gg/twisted-models.git"
   },
   "devDependencies": {
     "@nestjs/testing": "^6.0.0",

@@ -2,8 +2,7 @@ import { Injectable, NotFoundException } from '@nestjs/common'
 import { Model } from 'mongoose'
 import { ModelsName } from '../enums/database.enum'
 import { InjectModel } from '@nestjs/mongoose'
-import { IMapsModel } from '../models/models/maps/maps.interface'
-import { SeasonDTO } from '../models/models/seasons/seasons.dto'
+import { IMapsModel, SeasonDTO } from 'twisted-models'
 
 @Injectable()
 export class SeasonsService {

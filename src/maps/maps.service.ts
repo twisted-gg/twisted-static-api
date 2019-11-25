@@ -2,8 +2,7 @@ import { Injectable, NotFoundException } from '@nestjs/common'
 import { Model } from 'mongoose'
 import { ModelsName } from '../enums/database.enum'
 import { InjectModel } from '@nestjs/mongoose'
-import { IMapsModel } from '../models/models/maps/maps.interface'
-import { MapsDTO } from '../models/models/maps/maps.dto'
+import { IMapsModel, MapsDTO } from 'twisted-models'
 
 @Injectable()
 export class MapsService {
@@ -21,7 +20,7 @@ export class MapsService {
     if (id) {
       const instance = await this.repository.findOne({ id })
       if (!instance) {
-        throw new NotFoundException(`Season ${id} not found`)
+        throw new NotFoundException(`Map ${id} not found`)
       }
       return instance
     }

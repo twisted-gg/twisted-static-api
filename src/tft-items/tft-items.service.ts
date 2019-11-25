@@ -1,10 +1,8 @@
 import { Injectable, NotFoundException } from '@nestjs/common'
-import { QueuesDataDragonDTO } from 'twisted/dist/dto'
 import { Model } from 'mongoose'
 import { ModelsName } from '../enums/database.enum'
 import { InjectModel } from '@nestjs/mongoose'
-import { IMapsModel } from '../models/models/maps/maps.interface'
-import { StaticTftItemsDTO } from '../models/models/tft-items/tft-items.dto'
+import { IMapsModel, StaticTftItemsDTO } from 'twisted-models'
 
 @Injectable()
 export class TftItemsService {
@@ -22,7 +20,7 @@ export class TftItemsService {
     if (id) {
       const instance = await this.repository.findOne({ id })
       if (!instance) {
-        throw new NotFoundException(`Season ${id} not found`)
+        throw new NotFoundException(`Item ${id} not found`)
       }
       return instance
     }

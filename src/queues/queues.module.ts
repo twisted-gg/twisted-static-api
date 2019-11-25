@@ -2,7 +2,7 @@ import { MongooseModule } from '@nestjs/mongoose'
 import { Module } from '@nestjs/common'
 import { QueuesService } from './queues.service'
 import { QueuesController } from './queues.controller'
-import { QueueModel } from '../models/models/queue/queue.model'
+import { QueueModel } from 'twisted-models'
 
 @Module({
   imports: [

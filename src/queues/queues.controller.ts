@@ -1,8 +1,8 @@
 import { Controller, Get, Query } from '@nestjs/common'
 import { QueuesService } from './queues.service'
-import { QueueDTO } from '../models/models/queue/queue.dto'
 import { QueryStaticData } from '../models/dto/query.static-data.dto'
 import { ApiOkResponse, ApiOperation, ApiUseTags } from '@nestjs/swagger'
+import { QueueDTO } from 'twisted-models'
 
 @Controller('queues')
 @ApiUseTags('Queues')
