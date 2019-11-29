@@ -17,11 +17,11 @@ export class QueuesService {
     }
   }
 
-  async get (id?: string | number) {
-    if (id) {
-      const instance = await this.repository.findOne({ id })
+  async get (queueId?: string | number) {
+    if (queueId) {
+      const instance = await this.repository.findOne({ queueId })
       if (!instance) {
-        throw new NotFoundException(`Queue ${id} not found`)
+        throw new NotFoundException(`Queue ${queueId} not found`)
       }
       return instance
     }
