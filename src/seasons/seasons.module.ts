@@ -2,7 +2,7 @@ import { MongooseModule } from '@nestjs/mongoose'
 import { Module } from '@nestjs/common'
 import { SeasonsService } from './seasons.service'
 import { SeasonsController } from './seasons.controller'
-import { SeasonsModel } from 'twisted-models'
+import { SeasonsModel } from '@twisted.gg/models'
 
 @Module({
   imports: [

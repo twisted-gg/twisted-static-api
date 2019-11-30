@@ -2,7 +2,7 @@ import { MongooseModule } from '@nestjs/mongoose'
 import { Module } from '@nestjs/common'
 import { MapsService } from './maps.service'
 import { MapsController } from '././maps.controller'
-import { MapsModel } from 'twisted-models'
+import { MapsModel } from '@twisted.gg/models'
 
 @Module({
   imports: [

@@ -2,7 +2,7 @@ import { Controller, Get, Query } from '@nestjs/common'
 import { QueryStaticData } from '../models/dto/query.static-data.dto'
 import { ApiOkResponse, ApiOperation, ApiUseTags } from '@nestjs/swagger'
 import { SeasonsService } from './seasons.service'
-import { SeasonDTO } from 'twisted-models'
+import { SeasonDTO } from '@twisted.gg/models'
 
 @Controller('seasons')
 @ApiUseTags('Seasons')

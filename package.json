@@ -13,7 +13,7 @@
     "format": "prettier --write \"src/**/*.ts\"",
     "start": "ts-node -r tsconfig-paths/register src/main.ts",
     "start:dev": "tsc-watch -p tsconfig.build.json --onSuccess \"node dist/main.js\"",
-    "start:debug": "ts-node-dev --debounce 300 --watch src/**/*.ts --inspect=9230 --debug src/main.ts",
+    "start:debug": "tsnd --transpileOnly --debounce 300 --inspect=0.0.0.0:9230 src/main.ts",
     "start:prod": "node dist/main.js",
     "lint": "tslint -p tsconfig.json -c tslint.json",
     "lint:fix": "tslint --fix -p tsconfig.json -c tslint.json",
@@ -30,6 +30,8 @@
     "@nestjs/mongoose": "^6.1.2",
     "@nestjs/platform-express": "^6.0.0",
     "@nestjs/swagger": "^3.1.0",
+    "@twisted.gg/common": "^1.0.3",
+    "@twisted.gg/models": "^1.0.1",
     "class-transformer": "^0.2.3",
     "class-validator": "^0.10.2",
     "js-roman-numerals": "^1.1.0",
@@ -38,9 +40,7 @@
     "reflect-metadata": "^0.1.12",
     "rimraf": "^2.6.2",
     "rxjs": "^6.3.3",
-    "swagger-ui-express": "^4.1.2",
-    "twisted-common": "git+https://gitlab.com/twisted.gg/twisted-common.git",
-    "twisted-models": "git+https://gitlab.com/twisted.gg/twisted-models.git"
+    "swagger-ui-express": "^4.1.2"
   },
   "devDependencies": {
     "@nestjs/testing": "^6.0.0",

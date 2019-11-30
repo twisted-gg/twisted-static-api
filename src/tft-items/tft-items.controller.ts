@@ -2,7 +2,7 @@ import { Controller, Get, Query } from '@nestjs/common'
 import { TftItemsService } from './tft-items.service'
 import { QueryStaticData } from '../models/dto/query.static-data.dto'
 import { ApiOkResponse, ApiOperation, ApiUseTags } from '@nestjs/swagger'
-import { StaticTftItemsDTO } from 'twisted-models'
+import { StaticTftItemsDTO } from '@twisted.gg/models'
 
 @Controller('tft/items')
 @ApiUseTags('TFT Items')

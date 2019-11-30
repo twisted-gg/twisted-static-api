@@ -1,9 +1,9 @@
 import { Injectable, NotFoundException } from '@nestjs/common'
-import { QueuesDataDragonDTO } from 'twisted/dist/dto'
+import { QueuesDataDragonDTO } from '@twisted.gg/common/dist/wrapper/dto'
 import { Model } from 'mongoose'
 import { ModelsName } from '../enums/database.enum'
 import { InjectModel } from '@nestjs/mongoose'
-import { IQueueModel } from 'twisted-models'
+import { IQueueModel } from '@twisted.gg/models'
 
 @Injectable()
 export class QueuesService {

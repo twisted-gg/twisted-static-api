@@ -2,7 +2,7 @@ import { Injectable, NotFoundException } from '@nestjs/common'
 import { Model } from 'mongoose'
 import { ModelsName } from '../enums/database.enum'
 import { InjectModel } from '@nestjs/mongoose'
-import { IMapsModel, MapsDTO } from 'twisted-models'
+import { IMapsModel, MapsDTO } from '@twisted.gg/models'
 
 @Injectable()
 export class MapsService {

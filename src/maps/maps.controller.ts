@@ -2,7 +2,7 @@ import { Controller, Get, Query } from '@nestjs/common'
 import { MapsService } from './maps.service'
 import { QueryStaticData } from '../models/dto/query.static-data.dto'
 import { ApiOkResponse, ApiOperation, ApiUseTags } from '@nestjs/swagger'
-import { MapsDTO } from 'twisted-models'
+import { MapsDTO } from '@twisted.gg/models'
 
 @Controller('maps')
 @ApiUseTags('Maps')
